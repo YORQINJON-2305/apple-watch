@@ -1,0 +1,336 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+:root {
+    --text-color-222: #222222;
+    --text-color-333: #333333;
+    --text-color-777: #777777;
+    --font-weight-bold: 700;
+    --button-color: #EA625C;
+    --button-hover-bg: #C9514C;
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-display: swap;
+    font-weight: 400;
+    src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"),
+        url("../fonts/roboto-v30-latin-regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-display: swap;
+    font-weight: 700;
+    src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2"),
+        url("../fonts/roboto-v30-latin-700.woff") format("woff");
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+img {
+    display: block;
+    height: auto;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+            clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.header-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 30px;
+}
+
+.site-logo {
+    display: block;
+    margin-right: auto;
+}
+
+.header-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.header-item {
+    margin-right: 30px;
+    border-bottom: 3px solid transparent;
+    -webkit-transition: border 0.3s;
+    -o-transition: border 0.3s;
+    transition: border 0.3s;
+}
+
+.header-item:last-child {
+    margin-right: 40px;
+}
+
+/* Nav hover */
+
+.header-item:hover{
+    border-bottom: 3px solid #333333;
+}
+
+.header-link {
+    display: inline-block;
+    padding-bottom: 3px;
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--text-color-333);
+}
+
+.search-input {
+    width: 165px;
+    padding: 8px 0px;
+    font-size: 14px;
+    color: #6666;
+    border: none;
+    border-bottom: 1px solid #333333;
+}
+
+/* Hero */
+
+.hero-section {
+    padding: 170px 0px 185px 0px;
+    background-image: url("../images/hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 650px) calc(50% + 40px);
+    border-bottom: 2px solid #DDDDDD;
+}
+
+.hero-text-wrap {
+    width: 490px;
+}
+
+.hero-title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.hero-descr {
+    margin: 0;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    color: var(--text-color-777);
+    border-left: 3px solid #8888;
+}
+
+.hero-link {
+    display: inline-block;
+    padding: 12px 38px;
+    background-color: var(--button-color);
+    color: #fff;
+    font-size: 17px;
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: background 0.3s;
+    -o-transition: background 0.3s;
+    transition: background 0.3s;
+}
+
+/* Hero link hover */
+
+.hero-link:hover{
+    background-color: var(--button-hover-bg);
+}
+
+/* Features */
+
+.features-section {
+    padding: 70px 0px;
+}
+
+.features-list {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    list-style-type: none;
+}
+
+.features-item {
+    width: 280px;
+}
+
+.features-item-title {
+    margin: 0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: var(--font-weight-bold);
+    color: var(--text-color-222);
+}
+
+.features-item-descr {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: var(--text-color-333);
+}
+
+.dots-dvider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.dots {
+    width: 8px;
+    height: 8px;
+    background: #DDDDDD;
+    margin-right: 10px;
+}
+
+
+.features-link{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    color:#EA625C;
+    font-weight: var(--font-weight-bold);
+}
+
+.features-link:hover::before{
+    width: 60px;
+    background-size: 60px;
+    content: "";
+}
+
+.features-link::before{
+    width: 40px;
+    height: 5px;
+    display: block;
+    background-image: url("../images/link-line.svg");
+    margin-right: 10px;
+    -webkit-transition: width 0.5s;
+    -o-transition: width 0.5s;
+    transition: width 0.5s;
+    content: "";
+}
+
+/* Nike Sport Band */
+
+.nike-section{
+    padding: 70px 0px;
+}
+
+.nike-wrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.nike-text-wrap{
+    width: 490px;
+}
+
+.nike-link{
+    padding: 12px 90px;
+}
+
+
+/* Health */
+
+.health-section{
+    padding: 240px 0px;
+    background-image: url("../images/runners.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.health{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+}
+
+.health-wrap{
+    width: 490px;
+}
+
+.health-title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: #fff;
+}
+
+.health-descr {
+    margin: 0;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    color: #fff;
+    border-left: 3px solid #fff;
+}
+
+.health-link {
+    display: inline-block;
+    padding: 12px 46px;
+    background-color: var(--button-color);
+    color: #fff;
+    font-size: 17px;
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    text-decoration: none;
+}
